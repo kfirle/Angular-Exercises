@@ -1,0 +1,7 @@
+<input type="text" #txt/>
+<button (click)="sendMessage(txt.value,id)">Send</button> <br/> <br/>
+<div *ngIf="msg_list">
+  <div *ngFor="let x of msg_list; let j=index">
+    <span [ngClass]="{Last:j==msg_list.length-1}"> {{x}} </span>
+    </div>
+</div>
