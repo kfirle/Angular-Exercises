@@ -1,0 +1,5 @@
+div.big{width: 350px; height: 350px; position: relative; left: 36%;}
+span.regular{display:inline-block; width: 100px; height: 100px;  border-radius: 25px; padding: 10px;}
+span.selected{display:inline-block; width: 100px; height: 100px;  border-radius: 25px; border:2px solid red;}
+button.inactive{font-size: larger; border-radius: 5px; border: 2px solid gray;}
+button.active{font-size: larger; border-radius: 5px; border: 2px solid blue;}

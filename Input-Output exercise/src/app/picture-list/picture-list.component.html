@@ -1,0 +1,12 @@
+<div class="big">
+  <app-picture [url]="big_pic_url"></app-picture>
+</div>
+<br/><br/>
+<span *ngFor="let x of url_arr" class="regular">
+  <span [ngClass]="{selected:x == big_pic_url}">
+    <app-picture [url]="x" (pic_clicked)="updateBigPic($event)"></app-picture>
+  </span>
+</span>
+<br/><br/>
+<button [ngClass]="{active:is_autoplay_on == true, inactive:is_autoplay_on == false}" (click)="startAutoPlay()">Auto Play</button> &nbsp; &nbsp;
+<button [ngClass]="{active:is_autoplay_on == false, inactive:is_autoplay_on == true}" (click)="stopAutoPlay()">Stop Auto Play</button>
