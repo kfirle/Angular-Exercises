@@ -1,0 +1,28 @@
+<h1>Inspector {{name}}</h1>
+<table>
+  <tr>
+    <td>
+      Vehicle Number:
+    </td>
+    <td>
+      <input #vehicle_num type="number"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Address:
+    </td>
+    <td>
+      <input #address type="text"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Date:
+    </td>
+    <td>
+      <input #date1 type="date"/>
+    </td>
+  </tr>
+</table>
+<button (click)="createReport(+vehicle_num.value, address.value, date1.value)">Send Report</button>

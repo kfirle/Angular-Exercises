@@ -1,0 +1,11 @@
+<div *ngIf="reports.length > 0">
+  <h1>Reports</h1>
+  <div *ngFor="let x of reports">
+    <fieldset>
+      <legend>{{x.inspector_name}}</legend>
+      {{x.vehicle_num}}
+      {{x.address}}
+      {{x.date.getDate() + '/' +  (x.date.getMonth()+1) + '/' +  x.date.getFullYear()}}
+    </fieldset>
+  </div>
+</div>
