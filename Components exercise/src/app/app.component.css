@@ -1,0 +1,4 @@
+
+div.main{border: 2px solid black; padding: 10px; float: left; width: 98%; height: 600px;}
+div.body{border: 2px solid black; padding: 10px; float: left; width: 46%; height: 400px}
+div.space{float: left; width: 4%;}
