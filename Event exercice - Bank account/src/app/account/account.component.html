@@ -1,0 +1,4 @@
+<div>balance: {{balance}}</div>
+<input #num type="number" min="0" placeholder="Insert a number"> <br/>
+<button (click)="deposit(+num.value)">+</button> &nbsp;
+<button (click)="withdraw(+num.value)">-</button>
