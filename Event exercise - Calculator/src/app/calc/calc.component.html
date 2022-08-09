@@ -1,0 +1,7 @@
+<input #first type="number" placeholder="first num"/> &nbsp;
+<input #second type="number" placeholder="second num"/> <br/>
+<button (click)="multiply(+first.value, +second.value)">x</button> &nbsp;
+<button (click)="divide(+first.value, +second.value)">/</button> &nbsp;
+<div *ngIf="is_active">
+  result: <input type="number" disabled="disabled" value="{{result}}"/>
+</div>
