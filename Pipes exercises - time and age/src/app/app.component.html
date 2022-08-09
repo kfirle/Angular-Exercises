@@ -1,0 +1,13 @@
+<div class="main">
+  Insert Time in Minutes: <input [(ngModel)]="time" type="number" min="0"/> <br/>
+  <div *ngIf="time">
+    <h3>Time In Hours-Minutes:</h3>
+    {{time|toMinHours|json}}
+  </div>
+</div>
+<div class="main">
+  Date Of Birth: <input type="date" [(ngModel)]="birthdate"/> <br/>
+  <div *ngIf="birthdate">
+    Your age is: {{birthdate|age}} years
+  </div>
+</div>
