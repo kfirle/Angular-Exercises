@@ -1,0 +1,16 @@
+<div class="main_div">
+  <div *ngFor="let x of arr; let j=index">
+    <span (mouseenter)="displayProduct(j)" (mouseout)="hideProduct(j)">
+      <img src="./assets/{{x.name}}.jpg"/> <br/>
+      {{x.name}}
+    </span>
+  </div>
+</div>
+
+<div class="main_div" style="text-align:right" *ngIf="output_name">
+  <img src="./assets/{{output_name}}.jpg"/> <br/>
+   name: {{output_name}}
+   <br/>
+   price: {{output_price}}
+</div>
+
