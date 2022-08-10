@@ -1,0 +1,4 @@
+<input #firstname placeholder="First Name" />
+<input #lastname placeholder="Last Name" />
+<button (click)="createUserName(firstname.value,lastname.value)"> Send </button>
+<div *ngIf="username">username: {{username}} </div>
