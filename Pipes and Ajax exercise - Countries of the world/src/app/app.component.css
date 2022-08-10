@@ -1,0 +1,4 @@
+div.header{background-color: aquamarine; text-align: center;}
+div.body{background-color: cornflowerblue;text-align: center;}
+tr:nth-child(even){background-color: #ccc;}
+tr:nth-child(odd){background-color: #fff;}

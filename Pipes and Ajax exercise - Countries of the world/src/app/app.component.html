@@ -1,0 +1,23 @@
+<div class="header">
+  <h1 style="margin:0px;">Earth Countries</h1>
+</div>
+<div class="body">
+  search: <input #new_search type="text" (input)="update_criteria(new_search.value)"/> <br/>
+  <table border="1" align="center">
+    <tr>
+      <th>Name</th>
+      <th>Official Name</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>Flag</th>
+    </tr>
+    <tr *ngFor="let x of countries|filter1:search_criteria">
+      <td>{{x.name.common}}</td>
+      <td>{{x.name.official}}</td>
+      <td *ngIf="x.capital">{{x.capital[0]}}</td>
+      <td *ngIf="!x.capital"></td>
+      <td>{{x.population}}</td>
+      <td><img src="{{x.flags.png}}" width="50px"/></td>
+    </tr>
+  </table>
+</div>
