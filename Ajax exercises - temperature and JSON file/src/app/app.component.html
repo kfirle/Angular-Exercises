@@ -1,0 +1,17 @@
+<div class="main_div">
+  <input type="button" value="get object" (click)="getObj1()"/> <br/>
+  <div *ngIf="obj">
+    <div *ngFor="let x of obj">
+      name: {{x.name}} <br/>
+      price: {{x.price}} <br/> <br/>
+    </div>
+  </div>
+</div>
+
+<div class="main_div" style="text-align:right">
+  <input #city placeholder="Insert a city"/><br/>
+  <button (click)="getTemperatureObj(city.value)">Get Temperature</button><br/>
+  <div *ngIf="obj_temperature">
+    Temperatue: {{obj_temperature.main.temp}}&deg;
+  </div>
+</div>
