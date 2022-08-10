@@ -1,0 +1,3 @@
+div.left{width: 50%; float: left;}
+div.right{width: 50%; float: left;  position: fixed; right: -25%;}
+li:hover{color: red;}

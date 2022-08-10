@@ -1,0 +1,16 @@
+<div class="left" onmouseleave="">
+  <ul>
+    <li *ngFor="let x of crypto_list" (click)="getDetails(x.id)">
+      {{x.id}}
+    </li>
+  </ul>
+</div>
+
+<div class="right" *ngIf="selected">
+  <h2>{{selected.id}}</h2>
+  <img src="{{selected.image.large}}"/> <br/>
+  <u>Exchange Rates</u><br/>
+  USD: {{selected.market_data.current_price.usd}}$ <br/>
+  EUR: {{selected.market_data.current_price.eur}}&euro; <br/>
+  ILS: {{selected.market_data.current_price.ils}}&#8362;
+</div>
